@@ -97,3 +97,28 @@ footer p {
 	margin: 0;
 	font-size: 1rem;
 }
+
+@media screen and (min-width: 40em) {
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 20px;
+    }
+  
+    article {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media screen and (min-width: 70em) {
+    aside {
+      display: block;
+      order: 2;
+      align-self: center;
+    }
+  
+    main {
+      grid-template-columns: 2fr 1fr;
+      column-gap: 20px;
+    }
+  }
